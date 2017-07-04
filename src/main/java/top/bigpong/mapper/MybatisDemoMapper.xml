@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="top.bigpong.mapper.MybatisDemoMapper" >
+  <resultMap id="BaseResultMap" type="top.bigpong.entity.DemoEntity" >
+    <result column="real_name" property="realName"/>
+    <result column="nick_name" property="nickName" />
+  </resultMap>
+
+  <select id="selectById" resultType="java.lang.String">
+    select nick_name from bysj_user
+    where real_name = '1111'
+  </select>
+  
+  <update id="updateNickName">
+    update bysj_user SET nick_name = 'wuwuwu' where real_name = '1111'
+  </update>
+
+
+
+
+</mapper>
