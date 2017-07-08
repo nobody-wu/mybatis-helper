@@ -20,7 +20,7 @@ public class MybatisDemoTest {
 	
 	@Test
 	public void MyBatisDemoTest(){
-		mybatisDemoService.updateNickName();
+		mybatisDemoService.query();
 	}
 
 }

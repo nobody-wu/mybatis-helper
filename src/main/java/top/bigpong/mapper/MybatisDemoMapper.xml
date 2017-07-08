@@ -6,9 +6,8 @@
     <result column="nick_name" property="nickName" />
   </resultMap>
 
-  <select id="selectById" resultType="java.lang.String">
-    select nick_name from bysj_user
-    where real_name = '1111'
+  <select id="query" resultMap="BaseResultMap">
+    select * from bysj_user
   </select>
   
   <update id="updateNickName">
